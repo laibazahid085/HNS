@@ -1183,3 +1183,79 @@ SCROLL REVEAL
 .swiper-slide:nth-child(5){
     transition-delay: .5s;
 }
+/*==============================
+WHATSAPP FLOAT BUTTON
+==============================*/
+
+.whatsapp-float{
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    width: 60px;
+    height: 60px;
+
+    background: #25D366;
+    color: #fff;
+
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    overflow: hidden;
+    text-decoration: none;
+
+    box-shadow: 0 8px 25px rgba(37,211,102,.4);
+
+    transition: all .35s ease;
+
+    z-index: 9999;
+
+    animation: whatsappFloat 2s infinite;
+}
+
+.whatsapp-float i{
+    width: 60px;
+    text-align: center;
+    font-size: 32px;
+    flex-shrink: 0;
+}
+
+.whatsapp-text{
+    opacity: 0;
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    transition: all .35s ease;
+}
+
+/* Hover */
+
+.whatsapp-float:hover{
+    width: 150px;
+     box-shadow:
+        0 10px 25px rgba(37, 211, 102, 0.45),
+        0 0 20px rgba(37, 211, 102, 0.35);
+}
+
+.whatsapp-float:hover .whatsapp-text{
+    width: 90px;
+    opacity: 1;
+}
+
+/* Floating */
+
+@keyframes whatsappFloat{
+
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-8px);}
+    100%{transform:translateY(0);}
+
+}
+

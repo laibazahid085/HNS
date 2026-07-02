@@ -140,7 +140,7 @@ RESPONSIVE CSS
     }
 
     .hero-content h1{
-        font-size: 38px;
+        font-size: 35px;
         line-height: 1.3;
     }
 
@@ -736,6 +736,39 @@ Celebration Carousel
     .celebration-content p{
         font-size:15px;
         line-height:1.8;
+    }
+
+}
+/* Mobile */
+
+@media(max-width:768px){
+
+    .whatsapp-float{
+
+        width:55px;
+        height:55px;
+
+        right:18px;
+        bottom:18px;
+    }
+
+    .whatsapp-float i{
+        width:55px;
+        font-size:30px;
+    }
+
+    /* Mobile par bhi text show hoga */
+
+    .whatsapp-float:hover{
+        width:140px;
+         box-shadow:
+        0 10px 25px rgba(37, 211, 102, 0.45),
+        0 0 20px rgba(37, 211, 102, 0.35);
+    }
+
+    .whatsapp-float:hover .whatsapp-text{
+        width:80px;
+        opacity:1;
     }
 
 }
