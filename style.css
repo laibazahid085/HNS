@@ -1132,3 +1132,54 @@ ACHIEVEMENTS
 .footer-item p a:hover{
     color:var(--cyan);
 }
+/*==============================
+SCROLL REVEAL
+===============================*/
+
+.reveal{
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all .8s ease;
+}
+
+.reveal.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Delay for cards */
+
+.service-card:nth-child(1),
+.achievement-item:nth-child(1),
+.partner-card:nth-child(1),
+.swiper-slide:nth-child(1){
+    transition-delay: .1s;
+}
+
+.service-card:nth-child(2),
+.achievement-item:nth-child(2),
+.partner-card:nth-child(2),
+.swiper-slide:nth-child(2){
+    transition-delay: .2s;
+}
+
+.service-card:nth-child(3),
+.achievement-item:nth-child(3),
+.partner-card:nth-child(3),
+.swiper-slide:nth-child(3){
+    transition-delay: .3s;
+}
+
+.service-card:nth-child(4),
+.achievement-item:nth-child(4),
+.partner-card:nth-child(4),
+.swiper-slide:nth-child(4){
+    transition-delay: .4s;
+}
+
+.service-card:nth-child(5),
+.achievement-item:nth-child(5),
+.partner-card:nth-child(5),
+.swiper-slide:nth-child(5){
+    transition-delay: .5s;
+}
